@@ -1,7 +1,7 @@
-# @tendersa/widget-sector-trends
+# @tenders-sa-org/widget-sector-trends
 
 [![CI](https://github.com/Tenders-SA/widget-sector-trends/actions/workflows/ci.yml/badge.svg)](https://github.com/Tenders-SA/widget-sector-trends/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/@tendersa/widget-sector-trends)](https://www.npmjs.com/package/@tendersa/widget-sector-trends)
+[![npm version](https://img.shields.io/npm/v/@tenders-sa-org/widget-sector-trends)](https://www.npmjs.com/package/@tenders-sa-org/widget-sector-trends)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Embeddable bar chart widget showing tender volume and value by sector across South Africa. Zero runtime dependencies — built as a standalone IIFE bundle.
@@ -19,7 +19,7 @@ Add a container element with the `data-tendersa-sector-trends` attribute:
 Include the script:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@tendersa/widget-sector-trends@0.1/dist/widget-sector-trends.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tenders-sa-org/widget-sector-trends@0.1/dist/widget-sector-trends.iife.js"></script>
 ```
 
 The widget auto-initializes on DOMContentLoaded.
@@ -29,11 +29,11 @@ The widget auto-initializes on DOMContentLoaded.
 ### npm
 
 ```bash
-npm install @tendersa/widget-sector-trends
+npm install @tenders-sa-org/widget-sector-trends
 ```
 
 ```javascript
-import { SectorTrendsWidget } from '@tendersa/widget-sector-trends'
+import { SectorTrendsWidget } from '@tenders-sa-org/widget-sector-trends'
 
 const container = document.getElementById('my-chart')
 const widget = new SectorTrendsWidget(container, {
@@ -46,13 +46,13 @@ widget.render()
 ### CDN (jsDelivr)
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@tendersa/widget-sector-trends@0.1/dist/widget-sector-trends.iife.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tenders-sa-org/widget-sector-trends@0.1/dist/widget-sector-trends.iife.js"></script>
 ```
 
 ### CDN (unpkg)
 
 ```html
-<script src="https://unpkg.com/@tendersa/widget-sector-trends@0.1/dist/widget-sector-trends.iife.js"></script>
+<script src="https://unpkg.com/@tenders-sa-org/widget-sector-trends@0.1/dist/widget-sector-trends.iife.js"></script>
 ```
 
 ## Configuration
@@ -82,7 +82,7 @@ widget.render()
 ### `SectorTrendsWidget`
 
 ```javascript
-import { SectorTrendsWidget, init } from '@tendersa/widget-sector-trends'
+import { SectorTrendsWidget, init } from '@tenders-sa-org/widget-sector-trends'
 
 // Single widget
 const widget = new SectorTrendsWidget(document.getElementById('chart'), {
@@ -106,7 +106,7 @@ Scans the document for `[data-tendersa-sector-trends]` elements and initializes 
 ### Utility Functions
 
 ```javascript
-import { formatCompactNumber, formatCurrency, buildSectorTrendsUrl, fetchSectorTrends } from '@tendersa/widget-sector-trends'
+import { formatCompactNumber, formatCurrency, buildSectorTrendsUrl, fetchSectorTrends } from '@tenders-sa-org/widget-sector-trends'
 
 formatCompactNumber(1500000)    // '1.5M'
 formatCurrency(2500000)         // 'R 2.5M'
