@@ -1,5 +1,5 @@
 {
-  "name": "@tendersa/widget-sector-trends",
+  "name": "@tenders-sa-org/widget-sector-trends",
   "version": "0.1.0-alpha.0",
   "description": "Tenders-SA Sector Trends Widget - Embeddable bar chart showing tender volume and value by sector",
   "homepage": "https://tenders-sa.org/publishers/developers",
@@ -8,9 +8,9 @@
   "author": "Tenders-SA (https://tenders-sa.org)",
   "repository": { "type": "git", "url": "git+https://github.com/Tenders-SA/widget-sector-trends.git" },
   "type": "module",
-  "main": "./dist/widget-sector-trends.umd.js",
+  "main": "./dist/widget-sector-trends.global.js",
   "module": "./dist/widget-sector-trends.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/widget-sector-trends.d.ts",
   "files": ["dist", "README.md", "LICENSE"],
   "scripts": {
     "build": "tsup",
@@ -19,6 +19,7 @@
     "test": "vitest run",
     "prepublishOnly": "npm run build"
   },
+  "publishConfig": { "access": "public" },
   "engines": { "node": ">=18" },
   "packageManager": "npm@11+",
   "devDependencies": {
